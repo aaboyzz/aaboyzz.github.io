@@ -1,0 +1,233 @@
+/* Defining CSS Variables*/
+:root{
+    --light-blue: #17e9ed;
+    --purple: #a64ac9;
+    --yellow: #fccd04;
+    --cream: #f5e6cc;
+    --light-pink: #ffb48f;
+}
+
+/* Defining Custom Fonts */
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../assets/fonts/NunitoSans-Regular.ttf');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Nunito Sans';
+    src: url('../assets/fonts/NunitoSans-SemiBold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../assets/fonts/NunitoSans-Bold.ttf');
+    font-weight: bolder;
+}
+
+
+/* Normal Styling starts here */
+body{
+    margin: 0;
+    background-color: #f0f0f0;
+    color: #000;
+    font-family: 'Nunito Sans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #fff;
+}
+
+.navbar-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.greeting{
+    display: flex;
+    background-image: url(../assets/wallpaper3.png);
+    background-size: 100%;
+    height: 700px;
+    background-color: #000000;
+    filter: brightness(0.8);
+    color: #fff;
+}
+
+.message{
+    text-align: center;
+}
+
+
+.banner{
+    background-color: var(--purple);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner > h3, .banner > p{
+    color: #fff;
+    font-size: 23px;
+}
+
+button{
+    border: 0;width: 160px;
+    height: 30px;border-radius: 5px;
+}
+
+.btn-suggest{
+    background-color: #000;
+    color: #fff;
+    margin: 15px;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
+}
+
+.featured{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.featured-card{
+    width: 80%;
+    border-radius: 7px;
+    background-color: #fff;
+    height: 100%;
+    display: flex;
+}
+
+.featured-img{
+    border-radius: 7px 0 0 7px;
+    height: 300.5px;
+    margin-bottom: 15px;
+
+}
+
+.featured-info{
+    color: #000;
+    padding: 5px 15px 5px 15px;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 13%;
+    padding-right: 15px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.btn-watch{
+    background-color: var(--light-blue);
+    color: #fff;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.header{
+    margin-bottom: 5px;
+}
+
+.year{
+    margin-top: 5px;
+}
+
+p{
+    font-weight: bolder;
+}
+
+
+/* Watch Card & Also Watched Section */
+.also-watch{
+    margin-bottom: 50px;
+}
+
+.also-watch > h2 {
+    padding: 8px;
+    margin-bottom: 0px;
+}
+
+.also-watch-inner{
+    display: flex;
+
+}
+.watch-card{
+    background-color: #fff;
+    border-radius: 7px;
+    height: 230px;
+    width: 20%;
+    color: #000;
+    margin: 7px;
+}
+
+.watch-card-header{
+    height: 75%;
+    overflow: hidden;
+}
+
+.watch-card-img{
+    border-radius: 7px 7px 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.watch-card-content{
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7px 10px 7px;
+}
+
+.btn-play{
+    border-radius: 50%;
+    height: 35px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+}
+
+.icon{
+    color: #fff;
+    margin-left: 3px;
+}
+
+footer{
+    background-image: url(../assets/wallpaper1.png);
+    background-size: 100%;
+    filter: brightness(0.2);
+    height: 148px;
+    display: flex; justify-content: center; align-items: center;
+}
+

@@ -1,0 +1,11 @@
+{
+  "name": "go-watch",
+  "version": "1.0.0",
+  "description": "Anime themeed webiste",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Fortune Alebiosu",
+  "license": "ISC"
+}
